@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  .container{
+    background-image: url("/images/bg-desktop.svg");
+    background-color: var(--Violet);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    margin: 4em;
+  }
+  .logo{
+    width: 300px;
+    max-width: 100%;
+  }
+  .secondSection{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+.imageSection{
+}
+.imageSection img{
+    max-width: 100%;
+    width: 100em;
+}
+.textSection{
+        margin: 2em 2.5em;
+}
+.heading{
+    font-size: 2.5em;
+    font-weight: 700;
+   
+}
+.subHeading{
+    font-size: 1.05em;
+    margin-top: 2em;
+  }
+  .btn{
+    margin-top: 3em;
+    color: var(--Violet);
+    font-weight: 400;
+    padding: 20px 60px;
+    border-radius: 50px;
+    border: none;
+   
+  }
+  .btn:hover{
+    background-color: var(--Soft-Magenta);
+    box-shadow: 0px 0px 20px 1px rgb(57 56 57);
+}
+  .socalMedia{
+    position: absolute;
+    bottom: 15px;
+    right:10em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 10em;
+  }
+  @media (max-width: 900px){
+    .container{
+        position: relative;
+        background-image: url("/images/bg-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 100%;
+    }
+    main{
+      margin: 4em 0; 
+      }
+    .secondSection{
+        display: flex;
+        flex-direction: column;
+    }
+    .imageSection img{
+        width: 100%;
+    }
+    .textSection{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+    .heading{
+        font-size: 1.9em;
+        font-weight: 700;
+    }
+    .subHeading{
+        font-size: 1.05em;
+        margin-top: 2em;
+      }
+      .socalMedia{
+        position: absolute;
+        bottom: 0px;
+        right: 33%;
+      }
+  }
